@@ -1,0 +1,222 @@
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: 'calibri', Arial;
+}
+
+
+
+
+.topnav {
+    width: 80%;
+    overflow: hidden;
+    background-color: #006699;
+    margin: auto;
+    margin-top: 2%;
+}
+
+.topnav a {
+    overflow: hidden;
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    text-decoration-line: unset;
+    text-align: center;
+    padding: 4px 16px;
+    float: left;
+}
+
+.topnav a:hover {
+    background-color: white;
+    color: black;
+    -webkit-transition-delay: 150ms;
+    -webkit-transition-duration: 0.3s;
+}
+
+.leftcolumn {
+    float: left;
+    width: 70%;
+    margin-left: 1%;
+    margin-top: 1%;
+    padding: 1%;
+}
+
+.rightcolumn {
+    float: right;
+    width: 25%;
+    margin-top: 1%;
+    padding: 1%;
+}
+
+.card {
+    background-color: white;
+    margin-bottom: 5%;
+    padding: 3%;
+    padding-top: 1%;
+    margin-top: 1%;
+    box-shadow: 1px 3px 3px 1px grey;
+    border-radius: 5px;
+}
+
+.row {
+    background-color: #006699;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-left: 10%;
+    padding-top: -5%;
+}
+
+.row:after {
+    display: table;
+    clear: both;
+}
+
+footer {
+    background-color: white;
+}
+
+.livraison {
+    max-width: 80%;
+    height: auto;
+    margin: auto;
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.liens {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    height: 30px;
+    width: 80%;
+    /*margin:30px 0px 30px 30px 50px;*/
+    margin-left: 10%;
+    margin-top: 1%;
+}
+
+.reseau a,
+.reseau img {
+    width: 5em;
+    height: 5em;
+}
+
+.reseau {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: space-between;
+    border: 2px solid black;
+}
+
+.reseau p,
+.reseau p a {
+    width: 50%;
+    height: 50%;
+    margin-right: 5%;
+    margin-left: 5%;
+    align-content: space-between;
+    justify-content: space-between;
+    border: 2px solid black;
+}
+
+.reseau p a {
+    display: block;
+}
+
+.titrearticle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+    margin-bottom: 5%;
+    width: 80%;
+}
+
+.logo-tableur,
+.logo-lego,
+.logo-apps,
+.logo-admin {
+    width: 15%;
+    height: 15%;
+}
+
+.demo img:hover {
+    -ms-transform: scale(1.5);
+    /* IE 9 */
+    -webkit-transform: scale(1.5);
+    /* Safari 3-8 */
+    transform: scale(1.);
+    -webkit-transition: 1s transform 20ms;
+}
+
+.demo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.logo-bas {
+    overflow: hidden;
+}
+
+.logo-bas img {
+    width: 15em;
+    position: relative;
+    bottom: 0em;
+    transition: transform 1s;
+}
+
+.logo-bas:hover>img {
+    width: 15em;
+    position: relative;
+    transform: translate(400px, 0px);
+    transition: all 2s;
+}
+
+.titre_long1 {
+    float: left;
+    margin-right: 2px;
+}
+
+.titre_long2 {
+    float: right;
+}
+
+@media screen and (max-width:880px) {
+    body {
+        margin: auto;
+    }
+    .topnav a {
+        font-size: small;
+        flex-wrap: wrap;
+        padding-right: 1%;
+        padding-left: 1%;
+    }
+    .topnav,
+    .livraison,
+    .row,
+    footer {
+        width: 100%;
+    }
+    .row {
+        margin: 0;
+    }
+    .card {
+        font-size: smaller;
+    }
+    .liens {}
+}

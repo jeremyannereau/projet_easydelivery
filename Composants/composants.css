@@ -1,0 +1,253 @@
+/* ----------------  CSS normalize   -----------------------*/
+
+ /* link normalize.css */
+ 
+
+/* ----------------  Page style   -----------------------*/
+
+/* ------  General Style  ------ */
+
+body{
+    font-family: calibri, Arial, Helvetica;
+    display: flex;  
+    flex-direction: column;   
+    width:100vw; 
+    flex:1;
+}
+
+.main{
+    display:flex;
+    flex-direction: row;
+    width:90%;
+    margin:auto;
+    align-items: flex-start;
+    justify-content: space-between; 
+    height:auto;
+    margin-bottom: 2vw;
+    height:60vw;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+/*Buttons style*/
+
+.button_style {
+    background-color: #006699;
+    color:white;
+    border-color:#006699;
+    border-radius: 0.2vw;
+    box-shadow: none;
+    
+}
+.button_style:hover {
+    background-color: white;
+    color:#006699;
+    border-color:white;
+    border-radius: 0.2vw;
+    box-shadow: none;
+    -webkit-transition-delay: 10ms;
+    -webkit-transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+p{
+    margin-bottom:0;
+    margin-top:0;
+}
+
+/* -------- blocks ------- */
+
+.main_articles{
+    margin:auto;
+    margin-top:5vw;
+    margin-right :5vw;
+    border-radius: 0.3vw;
+    padding:0;
+    width:80%;
+}
+
+.content{
+    border:0.5px solid #006699;
+    border-radius: 0.3vw;
+    padding:1vw 2vw;
+    margin-bottom:2vw;
+
+}
+.content p{
+    margin-top:1vw;
+}
+
+/* NavBar top */
+
+.topnav {
+    width: 90%;
+    overflow: hidden;
+    background-color: #006699;
+    margin: auto;
+    margin-top: 2%;
+}
+
+.topnav a {
+    overflow: hidden;
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    text-decoration-line: unset;
+    text-align: center;
+    padding: 4px 16px;
+    float: left;
+}
+
+.topnav a:hover {
+    background-color: white;
+    color: black;
+    -webkit-transition-delay: 150ms;
+    -webkit-transition-duration: 0.3s;
+}
+
+/* Login form */
+
+.login_app{
+    border:0.5px solid #006699;
+    border-radius: 0.3vw;
+    padding:1vw;
+    width:20%;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    margin-top:5vw; 
+    max-height:100vh;     
+}
+
+.element_form{
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    margin:0.5vw; 
+}
+
+.separate{
+    border-bottom:1px solid #006699;
+    margin-bottom:1.5vw;
+    margin-top:1.2vw;
+    width:100%;
+    position:relative;
+    top:-4%;
+}
+
+.element_form > input , .element_form > button{
+    max-width:100%;
+    margin-bottom:1vw;
+    margin-top: 1vw;
+}
+
+/* Footer*/
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    height:10%;
+    position: relative;
+    
+  
+}
+.network_links{
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    height:auto;
+    
+    margin-bottom: 1vw;
+}
+
+.network{
+    width:90%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.links{
+    width:80%;
+}
+
+.network a{ 
+    
+    color:white;
+    text-align:center;
+    text-justify: auto;
+    font-size: large;
+    padding: 4px 16px;
+    float: left;
+    padding:0.2vw 2vw;
+}
+
+
+/* Banners and Pictures*/
+
+.mainbanner{
+    width:90%;
+}
+
+.network_logo{
+    width:7%;
+}
+
+
+    /* Animation logo*/
+
+/* Animation du logo à régler 
+.logo-anim{
+     height:100%;  
+     
+}
+
+/*
+.logo{
+    /*width:100%;*/ /*
+    margin:2vw 0;
+    z-index: -20;
+    height:100%;
+    max-height:15vh;  
+      
+}
+
+
+
+.logo-anim img {
+    width: 18vw;
+    position: relative;
+    bottom: 0em;
+    transition: transform 1s; 
+}
+
+.logo-anim:hover {
+    
+    height:100%;
+}
+.logo-anim:hover>img {
+    height:100%;
+    position: relative;
+    transform: translate(400px, 0px);
+    transition: all 2s;
+} 
+
+*/
+
+
+
+/* ----------------  Media Queries   -----------------------*/
+
+/* ------  General Style  ------ */
+
+
+@media screen and (max-width:1000px) {
+}
