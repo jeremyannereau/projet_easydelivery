@@ -1,4 +1,5 @@
 <?php
+    require_once ("bd_connect.php");
 
     if (isset($_POST['submit_connect']) ){
         $form_valid = TRUE;
@@ -37,7 +38,7 @@
                         if (password_verify($password,$result['password_user']))
                         {
                             $_SESSION["login"]=$login;   
-
+                            
                             echo "Bienvenue ".$result['firstname_user']." ".$result['name_user']." !";                 
                            
                         }else{
@@ -54,9 +55,11 @@
             }
         }
 
-
+       
         // Requête SELECT de tous les login
     }else{
         
     }
 
+    // On "kill" la connexion
+    $conn = null;

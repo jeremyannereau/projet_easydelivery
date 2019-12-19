@@ -217,6 +217,17 @@ img:hover [id~="twitter_link"]{
 }
 
 
+/* Affichages */
+
+ .status_connexion{
+    
+    color:rgba(245, 0, 0, 0.829);
+}
+ 
+
+
+
+
     /* Animation logo*/
 
 /* Animation du logo à régler 

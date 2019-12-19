@@ -1,12 +1,20 @@
-
-
 <?php
     session_start();
-    echo "En cours : session de ". $_SESSION["login"];
+    require_once ("bd_login.php");
 
-    require_once("headerlogged.html");
+    if (isset($_SESSION['login'])){
+        
+        $_SESSION['status_connexion'] = "success";
 
-    require_once("footerlogged.html");
+        require_once("headerlogged.html");
+
+        require_once("footerlogged.html");
+    }else{
+        header("Location: menu_accueil.php"); /* Redirection du navigateur */
+        $_SESSION['status_connexion'] = "failed";
+        
+        exit;
+    }
 ?>
 
 

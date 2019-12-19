@@ -1,9 +1,10 @@
 <?php
     session_start();
+    // session_destroy();
 ?>
 
-<?php require_once ("bd_connect.php");?>
-<?php require_once ("bd_login.php");?>
+<?php ?>
+
 
 <head>
         <title>EASY Delivery : Vos appros</title>
@@ -26,9 +27,9 @@
         <a href="#">AIDE</a>
         <a href="#" style="float:right">NOUS CONTACTER</a>
     </div>
-
+            
     <div class = "main">
-
+           
         <div class = "main_articles">
 
             <div class = "content">
@@ -61,7 +62,14 @@
 
         <div class = "login_app">
             <form class ="element_form" name = "form_login" method = "POST" action ="logged.php"> 
-            <p> S'identifier</p>
+            <div>
+                <?php if (isset($_SESSION['status_connexion']) AND ($_SESSION['status_connexion']=="failed") ) {
+                    echo "<p class='status_connexion'>Erreur de connexion</p>  <p class='status_connexion'> Merci de réessayer</p>";
+                }else{
+                    echo "<p> S'identifier</p>";
+                }
+                ?>
+            </div>
             <div class = "separate"> </div>
 
             <label for ="login">Identifiant</label>
