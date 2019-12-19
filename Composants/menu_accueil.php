@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <?php require_once ("bd_connect.php");?>
 <?php require_once ("bd_login.php");?>
 
@@ -56,7 +60,7 @@
 
 
         <div class = "login_app">
-            <form class ="element_form" name = "form_login" method = "POST"> 
+            <form class ="element_form" name = "form_login" method = "POST" action ="logged.php"> 
             <p> S'identifier</p>
             <div class = "separate"> </div>
 
@@ -89,19 +93,19 @@
 
         <div class = "network links">
                        
-            <img class = "network_logo" src ="logo-twitter.png">
-            <img class = "network_logo" src ="logo-insta.png">
-            <img class = "network_logo" src ="logo-linkedin.png">
-            <img class = "network_logo" src ="Facebook_UI-03-512.png">
+            <img  class = "network_logo" src ="logo-twitter.png">
+            <img id="insta" class = "network_logo" src ="logo-insta.png">
+            <img id="linkedin" class = "network_logo" src ="logo-linkedin.png">
+            <img id="facebook" class = "network_logo" src ="Facebook_UI-03-512.png">
             
         </div>    
 
 
         <div class = "network topnav">
-            <a><p>RETWEETEZ NOUS SUR TWITTER</p></a>
-            <a><p>FOLLOWEZ NOUS SUR INSTAGRAM</p></a>
-            <a><p>CONNECTONS NOUS SUR LINKEDIN</p></a>
-            <a><p>RENDEZ-VOUS SUR FACEBOOK</p></a>
+            <a id="twitter_link" ><p >RETWEETEZ NOUS SUR TWITTER</p></a>
+            <a><p id="insta_link">FOLLOWEZ NOUS SUR INSTAGRAM</p></a>
+            <a><p id="linkedin_link">CONNECTONS NOUS SUR LINKEDIN</p></a>
+            <a><p id="facebook_link">RENDEZ-VOUS SUR FACEBOOK</p></a>
 
         </div>
 

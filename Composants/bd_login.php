@@ -1,4 +1,5 @@
 <?php
+
     if (isset($_POST['submit_connect']) ){
         $form_valid = TRUE;
 
@@ -35,7 +36,8 @@
                     foreach($results as $result){
                         if (password_verify($password,$result['password_user']))
                         {
-                            $_SESSION["login"]=$login;    
+                            $_SESSION["login"]=$login;   
+
                             echo "Bienvenue ".$result['firstname_user']." ".$result['name_user']." !";                 
                            
                         }else{

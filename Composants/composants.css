@@ -7,6 +7,8 @@
 
 /* ------  General Style  ------ */
 
+
+
 body{
     font-family: calibri, Arial, Helvetica;
     display: flex;  
@@ -30,6 +32,11 @@ body{
 header{
     display: flex;
     justify-content: center;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
 }
 
 /*Buttons style*/
@@ -82,15 +89,15 @@ p{
 
 /* NavBar top */
 
-.topnav {
+.topnav{
     width: 90%;
-    overflow: hidden;
+   /* overflow: hidden;*/
     background-color: #006699;
     margin: auto;
     margin-top: 2%;
 }
 
-.topnav a {
+.topnav a{
     overflow: hidden;
     text-decoration: none;
     color: white;
@@ -101,12 +108,13 @@ p{
     float: left;
 }
 
-.topnav a:hover {
+.topnav a:hover{
     background-color: white;
     color: black;
     -webkit-transition-delay: 150ms;
     -webkit-transition-duration: 0.3s;
 }
+
 
 /* Login form */
 
@@ -149,7 +157,6 @@ p{
 footer{
     display: flex;
     justify-content: center;
-    align-self: center;
     height:10%;
     position: relative;
     
@@ -180,7 +187,6 @@ footer{
 }
 
 .network a{ 
-    
     color:white;
     text-align:center;
     text-justify: auto;
@@ -188,6 +194,15 @@ footer{
     padding: 4px 16px;
     float: left;
     padding:0.2vw 2vw;
+}
+
+
+img:hover [id~="twitter_link"]{
+    border:red 2px solid;
+    background-color: white;
+    color: black;
+    -webkit-transition-delay: 150ms;
+    -webkit-transition-duration: 0.3s;
 }
 
 
