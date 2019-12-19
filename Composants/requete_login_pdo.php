@@ -1,5 +1,3 @@
 <?php
-
-$stmt = $conn-> prepare('SELECT "login", "password"')
-
+//inutile pour le moment
 ?>
